@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "dotnet KeyAPI.dll",
+    "healthcheckPath": "/api/keys/stats"
+  }
+}
