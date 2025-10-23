@@ -1,15 +1,16 @@
+# Простой Dockerfile для SimpleAPI
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /app
 
-# Копируем файлы проекта
+# Копируем только нужные файлы
 COPY SimpleKeyAPI.csproj ./
+COPY SimpleAPI.cs ./
+
+# Восстанавливаем зависимости
 RUN dotnet restore SimpleKeyAPI.csproj
 
-# Копируем остальные файлы
-COPY . ./
-
 # Собираем приложение
-RUN dotnet publish SimpleKeyAPI.csproj -c Release -o out
+RUN dotnet build SimpleKeyAPI.csproj -c Release -o out
 
 # Финальный образ
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
