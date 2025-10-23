@@ -90,10 +90,11 @@ WingTweaker - это профессиональное приложение дл�
 Если у вас возникли вопросы или проблемы:
 
 - 📧 Email: emow1ngs333@gmail.com
-- 💬 Telegram: @nexteal
+- 💬 Telegram: @nextsteal
 - 🐛 Issues: [GitHub Issues](https://github.com/emow1ngs/WingTweaker/issues)
 
 ---
 
 **WingTweaker** - делаем Windows лучше! 🚀
+
 
